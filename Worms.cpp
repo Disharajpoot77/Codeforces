@@ -17,24 +17,20 @@ int main(){
        cin>>juicy[i];
    }
 
-  int temp[n];
-  temp[0]=arr[0];
-   for(int i=0; i<n-1; i++)
-{
-   temp[i+1]=arr[i]+arr[i+1];
-   cout<<"worms"<<arr[i];
+int temp[n];
+temp[0]=arr[0];
+
+for(int i=1; i<n; i++){
+    temp[i]=temp[i-1]+arr[i];
 }
+// for(int i=0; i<n; i++){
+//     cout<<temp[i]<<" ";
+// }
+// cout<<endl;
+ for(int i=0; i<k; i++){
+        int index = lower_bound(temp, temp+n, juicy[i]) - temp;
+        cout << index+1 << endl;
+    }
 
-//    for(int i=0; i<k; i++){
-//        for(int j=0; j<n; j++){
-
-
-//            if(juicy[i]=arr[j]){
-//                cout<<"jcount"" "<<j+1<<endl;
-//            }
-//        }
-//    }
-
-  
 
 }
