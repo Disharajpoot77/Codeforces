@@ -33,6 +33,7 @@ long long n,x;
 			if(i<=n && j<=n){
 				count++;
 			}
+			
 			if(i!=j && i<=n && j<=n){
 				count++;
 			}
