@@ -24,6 +24,7 @@ int main(){
         else{
             current+=arr[i];
             current-=arr[i-k];
+			// index=i-k+1;
              if(current<sum){
                 sum=current;
 				index=i-k+1;
