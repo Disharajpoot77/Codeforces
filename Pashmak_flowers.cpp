@@ -11,14 +11,20 @@ int main(){
 	sort(arr,arr+n);
 	int D=0;
     int count=0;
+	int left=0;
+	int right=n-1;
 	D=arr[n-1]-arr[0];
-	
-	for(int i=0; i<n; i++){
-		for(int j=i+1; j<n; j++){
-			if(arr[j]-arr[i]==D){
+	// if(arr[right]>arr[left]){
+		// cout<<arr[right]<<" "<<arr[left]<<endl;
+		if(arr[right]-arr[left]==D){
 			count++;
+			left++;
 		}
+		else{
+			right--;
+			left=0;
 		}
-	}
+	
+	
 	cout<<D<<" "<<count<<endl;
 }
