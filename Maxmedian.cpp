@@ -23,6 +23,6 @@ int main(){
 		}
 	
 	}
-	cout<<"final"<<arr[median]<<endl;
+	cout<<arr[median]<<endl;
 }
  
