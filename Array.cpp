@@ -27,7 +27,7 @@ int main(){
 		}
         else{
            if(negative==0){
-			A1[l1]=arr[i];
+		 	A1[l1]=arr[i];
 			l1++;
 			negative++;
 		   }
