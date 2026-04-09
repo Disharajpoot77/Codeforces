@@ -36,7 +36,7 @@ int main(){
       cout<< (n-1-min+max);
 	}
 	else{
-		cout<< (max+n-min-2);
+		 cout<< (max+n-min-2);
 	}
 
 
