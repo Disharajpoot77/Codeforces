@@ -9,7 +9,7 @@ int main(){
 	int Danik=0;
 	int Anton=0;
     for(int i=0;i<S.size();i++){
-		 if(S[i]=='A'){
+		  if(S[i]=='A'){
 			Anton++;
 			
 		}
